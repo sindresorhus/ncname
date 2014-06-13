@@ -1,6 +1,6 @@
 {
   "name": "ncname",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Regular expression for matching XML NCName",
   "license": "MIT",
   "repository": "sindresorhus/ncname",
