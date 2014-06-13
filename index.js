@@ -2,7 +2,7 @@
 var xmlChars = require('xml-char-classes');
 
 function getRange(re) {
-	return re.toString().slice(2).slice(0, -2);
+	return re.source.slice(1, -1);
 }
 
 // http://www.w3.org/TR/1999/REC-xml-names-19990114/#NT-NCName
