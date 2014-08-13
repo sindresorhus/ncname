@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var ncname = require('./index');
+var ncname = require('./');
 
 it('should match valid NCName', function () {
 	assert(ncname.test('foo'));

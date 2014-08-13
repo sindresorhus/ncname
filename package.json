@@ -31,7 +31,7 @@
     "unicode"
   ],
   "dependencies": {
-    "xml-char-classes": "^0.1.0"
+    "xml-char-classes": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "*"
