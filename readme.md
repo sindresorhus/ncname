@@ -6,14 +6,14 @@
 ## Install
 
 ```sh
-$ npm install --save ncname
+$ npm install ncname
 ```
 
 
 ## Usage
 
 ```js
-var ncname = require('ncname');
+const ncname = require('ncname');
 
 ncname.test('hællæ');
 //=> true
@@ -25,4 +25,4 @@ ncname.test('$unicorn');
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
