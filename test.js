@@ -1,10 +1,24 @@
-'use strict';
-var assert = require('assert');
-var ncname = require('./');
+import test from 'ava';
+import m from '.';
 
-it('should match valid NCName', function () {
-	assert(ncname.test('foo'));
-	assert(ncname.test('fooå'));
-	assert(ncname.test('fooᅳ'));
-	assert(!ncname.test('#foo'));
+const matches = [
+	'foo',
+	'fooå',
+	'fooᅳ'
+];
+
+const nonMatches = [
+	'#foo'
+];
+
+test('matches', t => {
+	for (const x of matches) {
+		t.true(m.test(x));
+	}
+});
+
+test('non matches', t => {
+	for (const x of nonMatches) {
+		t.false(m.test(x));
+	}
 });
