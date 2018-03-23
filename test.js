@@ -12,13 +12,13 @@ const nonMatches = [
 ];
 
 test('matches', t => {
-	for (const x of matches) {
-		t.true(m.test(x));
+	for (const match of matches) {
+		t.true(m.test(match));
 	}
 });
 
 test('non matches', t => {
-	for (const x of nonMatches) {
-		t.false(m.test(x));
+	for (const nonMatch of nonMatches) {
+		t.false(m.test(nonMatch));
 	}
 });
