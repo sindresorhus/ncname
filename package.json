@@ -4,13 +4,16 @@
 	"description": "Regular expression for matching XML NCName",
 	"license": "MIT",
 	"repository": "sindresorhus/ncname",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=6"
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -31,10 +34,10 @@
 		"unicode"
 	],
 	"dependencies": {
-		"xml-char-classes": "^2.0.0"
+		"xml-char-classes": "^3.0.0"
 	},
 	"devDependencies": {
-		"ava": "*",
-		"xo": "*"
+		"ava": "^3.15.0",
+		"xo": "^0.45.0"
 	}
 }

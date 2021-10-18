@@ -1,24 +1,24 @@
 import test from 'ava';
-import m from '.';
+import ncname from './index.js';
 
 const matches = [
 	'foo',
 	'fooå',
-	'fooᅳ'
+	'fooᅳ',
 ];
 
 const nonMatches = [
-	'#foo'
+	'#foo',
 ];
 
 test('matches', t => {
 	for (const match of matches) {
-		t.true(m.test(match));
+		t.true(ncname.test(match));
 	}
 });
 
 test('non matches', t => {
 	for (const nonMatch of nonMatches) {
-		t.false(m.test(nonMatch));
+		t.false(ncname.test(nonMatch));
 	}
 });
